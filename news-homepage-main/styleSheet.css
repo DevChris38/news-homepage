@@ -1,4 +1,4 @@
-* {
+ * {
     box-sizing: border-box;
 }
 
@@ -32,6 +32,11 @@ li {
     flex-direction: row-reverse;
     justify-content:flex-end;
     flex-basis: auto;
+    cursor: pointer;
+}
+
+li:hover {
+    color: hsl(5, 85%, 63%);
 }
 
 img.article-principal {
@@ -43,23 +48,90 @@ img.article-principal {
 h1.article-principal  {
     grid-area: 6/1/7/2;
     font-size: 56px;
+    line-height: 56px;
     margin:0px auto auto 0px;
 }
 
 p.article-principal {
     grid-area:6/2/7/3;
+    margin:0px;
+    padding:0px;
+    font-size: 15px;
+    line-height: 26px;
+    color: hsl(236, 13%, 42%);
 }
 
 #read-more {
     grid-area:6/2/7/3;
     margin-top: 133px;
+    width: 185px;
+    height: 48px;
+    background-color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+#read-more:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+#read-more p{
+    color: hsl(36, 100%, 99%);
+    font-size: 14px;
+    letter-spacing: 4.38px;
+    text-align: center;
 }
 
 #news {
     background-color: black;
-    color:white;
     grid-area: 4/3/7/4;
     padding:32px 24px;
+}
+
+h2 {
+    margin:0px 0px 34px 0px;
+    font-size: 40px;
+    color: hsl(35, 77%, 62%);
+}
+h3 {
+    font-size: 20px;
+    color: hsl(36, 100%, 99%);
+    margin:0px 0px 8px 0px;
+    cursor: pointer;
+}
+
+h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.article-new p {
+    font-size: 15px;
+    color: hsl(233, 8%, 79%);
+    margin:0px;
+}
+
+.trait {
+    display : inline-block;
+    width: 302px;
+    height: 1px;
+    background: hsl(236, 13%, 42%);
+    margin: 31px 0px;
+}
+
+h4 {
+    color: hsl(233, 8%, 79%);
+    font-size: 32px;
+    margin:0;
+}
+
+h5 {
+    color: hsl(240, 100%, 5%);
+    font-size: 18px;
+    margin:12px 0px 0px;
+    cursor: pointer;
+}
+
+h5:hover {
+    color: hsl(5, 85%, 63%);
 }
 
 #article-un {
@@ -72,6 +144,12 @@ p.article-principal {
 
 #article-trois {
     grid-area: 8/3/9/4;
+}
+
+[id*="article"] p {
+    color: hsl(236, 13%, 42%);
+    margin:12px 0px 0px;
+    font-size: 15px;
 }
 
 #article-un img{
@@ -93,8 +171,4 @@ p.article-principal {
     height: auto;
     margin:0px 24px 0px 0px;
     float:left;
-}
-.attribution {
-    grid-area:9/1/10/4;
-    margin:auto;
 }
