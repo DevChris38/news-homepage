@@ -2,6 +2,8 @@
     box-sizing: border-box;
 }
 
+@media (min-width: 1110px){
+
 body {
     width:1110px;
     margin:auto;
@@ -15,6 +17,10 @@ body {
 #logo {
     position: absolute;
     margin:0;
+}
+
+a#bouton-menu {
+    display: none;
 }
 
 ul {
@@ -39,10 +45,15 @@ li:hover {
     color: hsl(5, 85%, 63%);
 }
 
-img.article-principal {
+.article-principal_full {
+    display: block;
     width:730px;
     height: 300px;
     grid-area: 4/1/5/3;
+}
+
+.article-principal_mobile {
+    display: none;
 }
 
 h1.article-principal  {
@@ -171,4 +182,213 @@ h5:hover {
     height: auto;
     margin:0px 24px 0px 0px;
     float:left;
+}
+}
+
+
+@media (max-width: 1109px){
+
+body {
+    z-index: 1;
+    width:375px;
+    margin: 0px auto;
+    padding: 0px 16px;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+}
+
+/*#body-sombre {
+    z-index: 0;
+    position:absolute;
+    width:375px;
+    height:1872px;
+    top: 0px;
+    margin: 0px auto;
+    padding: 0px 16px;
+    background-color: hsla(240, 100%, 5%, 0.5);
+}*/
+
+#logo {
+    position: absolute;
+    top: 28px;
+    width: 45px;
+    height: 28px;
+}
+
+a#bouton-menu {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 17px;
+    margin: 34px 0px auto 303px;
+    top: 0px;
+    cursor: pointer;
+}
+
+#icon-menu-croix {
+    display: none;
+}
+
+#nav {
+    display:none;
+    position: absolute;
+    width: 256px;
+    height: 669px;
+    margin: 0px 0px auto 119px;
+    padding-top: 144px;
+    left: auto;
+    top: 0px;
+    z-index: 1;
+    background-color: hsl(36, 100%, 99%);
+    list-style-type:none;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+li {
+    margin-bottom: 24px;
+}
+
+.article-principal_full {
+    display: none;
+}
+
+.article-principal_mobile {
+    width: 343px;
+    height: auto;
+    display: block;
+    position: relative;
+    margin-top: 88px;
+}
+
+h1.article-principal  {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 24px auto auto 0px;
+    font-weight: 800;
+}
+
+p.article-principal {
+    margin:16px 0px 24px 0px;
+    padding:0px;
+    font-size: 15px;
+    line-height: 26px;
+    color: hsl(236, 13%, 42%);
+}
+
+#read-more {
+    padding: 13px 0px 11px;
+    width: 185px;
+    height: 48px;
+    background-color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+#read-more:hover {
+    background-color: hsl(240, 100%, 5%);
+}
+
+#read-more p{
+    color: hsl(36, 100%, 99%);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 4.38px;
+    text-align: center;
+    margin: 0;
+}
+
+#news {
+    background-color: black;
+    padding:32px 20px 32px 21px;
+    margin: 64px 0px;
+}
+
+h2 {
+    margin:0px 0px 34px 0px;
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(35, 77%, 62%);
+}
+h3 {
+    font-size: 20px;
+    color: hsl(36, 100%, 99%);
+    margin:0px 0px 8px 0px;
+    cursor: pointer;
+}
+
+h3:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.article-new p {
+    font-size: 15px;
+    line-height: 26px;
+    color: hsl(233, 8%, 79%);
+    margin:0px;
+}
+
+.trait {
+    display : inline-block;
+    width: 302px;
+    height: 1px;
+    background: hsl(236, 13%, 42%);
+    margin: 31px 0px;
+}
+
+h4 {
+    color: hsl(233, 8%, 79%);
+    font-size: 32px;
+    line-height: 32px;
+    margin:0;
+}
+
+h5 {
+    color: hsl(240, 100%, 5%);
+    font-size: 18px;
+    line-height: 24px;
+    margin:12px 0px 0px;
+    cursor: pointer;
+}
+
+h5:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+#article-un {
+    margin-bottom: 33px;
+}
+
+#article-deux {
+    margin-bottom: 33px;
+}
+
+[id*="article"] p {
+    color: hsl(236, 13%, 42%);
+    margin:9px 0px 0px;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+#article-un img{
+    width:100px;
+    height: auto;
+    margin:0px 24px 0px 0px;
+    float:left;
+}
+
+#article-deux img{
+    width:100px;
+    height: auto;
+    margin:0px 24px 0px 0px;
+    float:left;
+}
+
+#article-trois img{
+    width:100px;
+    height: auto;
+    margin:0px 24px 0px 0px;
+    float:left;
+}
 }
