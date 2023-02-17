@@ -230,7 +230,7 @@ a#bouton-menu {
     display: none;
 }
 
-#nav {
+ul#nav {
     display:none;
     position: absolute;
     width: 256px;
@@ -239,11 +239,22 @@ a#bouton-menu {
     padding-top: 144px;
     left: auto;
     top: 0px;
-    z-index: 1;
+    z-index: 2;
     background-color: hsl(36, 100%, 99%);
     list-style-type:none;
     font-size: 18px;
     line-height: 24px;
+}
+
+div#griser {
+    display:none;
+    position: absolute;
+    z-index: 1;
+    width: 375px;
+    height: 1872px;
+    top: 0px;
+    margin: 0px;
+    background-color: hsla(240, 100%, 5%, 50%);
 }
 
 li {
@@ -255,6 +266,7 @@ li {
 }
 
 .article-principal_mobile {
+    z-index: 0;
     width: 343px;
     height: auto;
     display: block;
