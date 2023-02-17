@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -16,80 +16,86 @@
 
 </head>
 <body>
+
+  <header>
+    <img id="logo" src="assets/images/logo.svg" alt="logo">
+  </header>
+
+  <nav>
+    <a id="bouton-menu">
+      <img id="icon-menu" src="assets/images/icon-menu.svg" alt="icone du menu">
+      <img id="icon-menu-croix" src="assets/images/icon-menu-close.svg" alt="icone pour fermer le menu">
+    </a>
   
-  <img id="logo" src="assets/images/logo.svg" alt="logo">
+    <script src="./script.js"></script>
 
-  <a id="bouton-menu">
-    <img id="icon-menu" src="assets/images/icon-menu.svg" alt="icone du menu">
-    <img id="icon-menu-croix" src="assets/images/icon-menu-close.svg" alt="icone pour fermer le menu">
-  </a>
+    <ul id="nav">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>    
+    </ul>
+  </nav>
 
-  <script src="./script.js"></script>
+  <main>
+    <div id="griser"> </div> <!-- div permettant de griser la page-->
 
-  <ul id="nav">
-      <li>Home</li>
-      <li>New</li>
-      <li>Popular</li>
-      <li>Trending</li>
-      <li>Categories</li>    
-  </ul>
+    <img class="article-principal_full" src="assets/images/image-web-3-desktop.jpg" alt="Image stylisée">
+    <img class="article-principal_mobile" src="assets/images/image-web-3-mobile.jpg" alt="Image stylisée">
 
-  <div id="griser"> </div> <!-- div permettant de griser la page-->
+    <h1 class="article-principal">The Bright Future of Web 3.0?</h1>
 
-  <img class="article-principal_full" src="assets/images/image-web-3-desktop.jpg" alt="Image stylisée">
-  <img class="article-principal_mobile" src="assets/images/image-web-3-mobile.jpg" alt="Image stylisée">
+    <p class="article-principal">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+      But is it really fulfilling its promise?</p>
 
-  <h1 class="article-principal">The Bright Future of Web 3.0?</h1>
+    <div id="read-more"> <p>READ MORE</p> </div>
 
-  <p class="article-principal">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-    But is it really fulfilling its promise?</p>
+    <div id="news">  
+      
+      <h2>New</h2> 
 
-  <div id="read-more"> <p>READ MORE</p> </div>
+      <div class="article-new">
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
 
-  <div id="news">  
-    
-    <h2>New</h2> 
+      <div class="trait"></div>
 
-    <div class="article-new">
-      <h3>Hydrogen VS Electric Cars</h3>
-      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <div class="article-new">
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+
+      <div class="trait"></div>
+
+      <div class="article-new">
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+
     </div>
 
-    <div class="trait"></div>
-
-    <div class="article-new">
-      <h3>The Downsides of AI Artistry</h3>
-      <p>What are the possible adverse effects of on-demand AI image generation?</p>
+    <div id="article-un">
+      <img src="assets/images/image-retro-pcs.jpg" alt="Image d'un PC">
+      <h4>01</h4>
+      <h5>Reviving Retro PCs</h5>
+      <p>What happens when old PCs are given modern upgrades?</p>
     </div>
 
-    <div class="trait"></div>
-
-    <div class="article-new">
-      <h3>Is VC Funding Drying Up?</h3>
-      <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    <div id="article-deux">
+      <img src="assets/images/image-top-laptops.jpg" alt="Image d'un clavier">
+      <h4>02</h4>
+      <h5>Top 10 Laptops of 2022</h5>
+      <p>Our best picks for various needs and budgets.</p>
     </div>
 
-  </div>
-
-  <div id="article-un">
-    <img src="assets/images/image-retro-pcs.jpg" alt="Image d'un PC">
-    <h4>01</h4>
-    <h5>Reviving Retro PCs</h5>
-    <p>What happens when old PCs are given modern upgrades?</p>
-  </div>
-
-  <div id="article-deux">
-    <img src="assets/images/image-top-laptops.jpg" alt="Image d'un clavier">
-    <h4>02</h4>
-    <h5>Top 10 Laptops of 2022</h5>
-    <p>Our best picks for various needs and budgets.</p>
-  </div>
-
-  <div id="article-trois">
-    <img src="assets/images/image-gaming-growth.jpg" alt="Image d'une manette">
-    <h4>03</h4>
-    <h5>The Growth of Gaming</h5>
-    <p>How the pandemic has sparked fresh opportunities.</p>
-  </div>
+    <div id="article-trois">
+      <img src="assets/images/image-gaming-growth.jpg" alt="Image d'une manette">
+      <h4>03</h4>
+      <h5>The Growth of Gaming</h5>
+      <p>How the pandemic has sparked fresh opportunities.</p>
+    </div>
+  </main>
 </body>
 </html>
