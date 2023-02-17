@@ -2,20 +2,27 @@
     box-sizing: border-box;
 }
 
+html, body{
+    background-color: hsl(36, 100%, 99%);
+    height: 100%;
+}
+
 @media (min-width: 1110px){
 
 body {
+    position: relative;
     width:1110px;
-    margin:auto;
+    margin: auto;
     font-family: 'Inter', sans-serif;
     display: grid;
     grid-template-columns: 350px 350px 350px;
-    grid-template-rows:8px 26px 61px 300px 28px 183px 71px 129px 40px;
+    grid-template-rows:8px 26px 61px 300px 28px 183px 71px 129px;
     column-gap: 30px;
+    
 }
 
 #logo {
-    position: absolute;
+    position: relative;
     margin:0;
 }
 
